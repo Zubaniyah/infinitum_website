@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & FAQ</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">Infinitum</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="team.html">About Us</a></li>
+            </ul>
+
+
+
+            </nav>
+        
+    </header>
+
+    <h1 id = "hi">Our Services</h1>
+    <section class="services">
+        <div class="service-card">
+            <h2>Service 1</h2>
+            <ul>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+            </ul>
+            <button class="cta-btn">Learn More</button>
+        </div>
+        <div class="service-card">
+            <h2>Service 2</h2>
+            <ul>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+            </ul>
+            <button class="cta-btn">Learn More</button>
+        </div>
+
+        <div class="service-card">
+            <h2>Service 3</h2>
+            <ul>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+                <li>Vestibulum lacinia arcu.</li>
+                <li>Curabitur quis varius libero.</li>
+                <li>Fusce nec tellus sed augue semper.</li>
+                <li>Phasellus nec sem in justo.</li>
+            </ul>
+            <button class="cta-btn">Learn More</button>
+        </div>
+    </section>
+
+    
+    <section class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <h2>What Do You Think Of Poptarts?</h2>
+            <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat, felis at consectetur commodo, elit est semper velit, id lacinia urna lacus ac nisl. Nulla orci mauris, volutpat a eros eu, dignissim dignissim orci. Vivamus non consectetur mi. Pellentesque ornare tellus molestie erat volutpat elementum. In fermentum pretium ultricies. Sed commodo augue nulla, non fringilla mauris finibus ut. Ut non erat pharetra risus elementum efficitur. Sed sapien enim, mattis tempor vehicula finibus, pellentesque porttitor turpis.
+
+                Sed sollicitudin sem sed ligula consequat vulputate. Ut pulvinar felis in quam molestie, ut ultricies magna lobortis. Donec hendrerit sem quis quam consectetur sagittis. Praesent vestibulum ligula vitae enim consectetur, ut placerat urna mollis. Sed feugiat justo eros, eget tincidunt metus placerat quis. Phasellus sit amet turpis luctus, posuere enim at, lobortis velit. Donec sodales, libero eget tristique accumsan, nibh nibh porttitor nibh, ut dictum turpis enim sed ex. Nam cursus erat mi, ac fermentum velit posuere eu.
+                
+                 </p>
+        </div>
+        <div class="faq-item">
+            <h2>Question 2</h2>
+            <p class="answer">Answer for question 2.</p>
+        </div>
+    </section>
+    
+<footer>
+    <div class="footer-content">
+
+        <div class="footer-copyright">
+            © 2023 by Infinitum. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+    
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll(".faq-item");
+    faqItems.forEach(item => {
+        item.querySelector("h2").addEventListener("click", () => {
+            const answer = item.querySelector(".answer");
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>

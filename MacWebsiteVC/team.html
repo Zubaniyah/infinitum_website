@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="team.css"> 
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">Infinitum</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="team.html">About Us</a></li>
+            </ul>
+
+
+
+            </nav>
+        
+    </header>
+
+    <main>
+        
+    </main>
+
+    <section class="team-section">
+        <div class="team-background">
+            <img src="morning ish.jpeg" alt="Team Background Image">
+            <div class="overlay">
+                <div class="content">
+                    <img src="Infinitum Image yet to be Posted.png" alt="Team Image">
+                    <div class="text-content">
+                        <h1 id = "what">About Us</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus, lectus at eleifend posuere, leo dolor vulputate velit, non eleifend leo elit id diam. Phasellus lobortis vestibulum quam ac rhoncus. Donec nec ante eros. Nunc finibus ullamcorper laoreet. Donec sit amet nunc imperdiet, blandit diam rhoncus, vulputate nunc. Nullam eget pretium nibh. Maecenas quis aliquam nisi, eget aliquam turpis. Nam laoreet bibendum orci, bibendum condimentum nisi aliquet vel. Proin luctus iaculis nisi et elementum. Integer fermentum nulla nec mauris bibendum, in euismod mauris lacinia. Sed ipsum tellus, malesuada ac lobortis eget, imperdiet in tortor. Sed vel felis eu tortor pretium aliquam vulputate id massa. Quisque gravida, nisi sed posuere ultricies, neque mauris elementum nibh, at aliquam tellus 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="founders-section">
+      <div class="section-title">
+        <h1>Our Founders</h1>
+    </div>
+      <div class="founders-grid">
+          <div class="team-member">
+              <img src="new dark.jpeg" alt="Founder 1">
+              <h2>Jane Doe</h2>
+              <p>Co-Founder & CEO</p>
+          </div>
+          <div class="team-member">
+            <img src="new dark.jpeg" alt="Founder 1">
+            <h2>Jane Doe</h2>
+            <p>Co-Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="new dark.jpeg" alt="Founder 1">
+          <h2>Jane Doe</h2>
+          <p>Co-Founder & CEO</p>
+      </div>
+      <div class="team-member">
+        <img src="new dark.jpeg" alt="Founder 1">
+        <h2>Jane Doe</h2>
+        <p>Co-Founder & CEO</p>
+    </div>
+          
+      </div>
+  </section>
+  
+  
+  <section class="directors-section">
+    <div class="section-title">
+      <h1>Our Directors</h1>
+  </div>
+      <div class="directors-grid">
+          <div class="team-member">
+              <img src="new dark.jpeg" alt="Director 1">
+              <h2>John Smith</h2>
+              <p>Director of Operations</p>
+          </div>
+          
+      </div>
+  </section>
+  
+  
+  <section class="team-grid-section">
+    <div class="section-title">
+      <h1>Our Dedicated Team</h1>
+  </div>
+      <div class="team-grid">
+          <div class="team-member">
+              <img src="new dark.jpeg" alt="Team member 1">
+              <h2>Harry Potter</h2>
+              <p>Lead Developer</p>
+          </div>
+          
+      </div>
+  </section>
+
+  <section id="carousel-section">
+    <div class="carousel-container">
+      <div class="carousel" id="carousel">
+        <div class="carousel-item" id="previous">
+          <img src="morning ish.jpeg" alt="Image 1">
+        </div>
+        <div class="carousel-item" id="current">
+          <img src="school.jpeg" alt="Image 2">
+        </div>
+        <div class="carousel-item" id="next">
+          <img src="Timeline January - February.png" alt="Image 3">
+        </div>
+      </div>
+    </div>
+  </section> 
+    
+
+
+  <footer>
+    <p>© 2023 by Infinitum. All Rights Reserved.</p>
+</footer>
+
+    <script>const carousel = document.getElementById('carousel');
+      const images = [
+        "morning ish.jpeg",
+        "school.jpeg",
+        "new dark.jpeg",
+        "Timeline January - February.png"
+      ];
+      const numberOfImages = images.length;
+      let currentImageIndex = 0;
+      
+      function updateCarousel() {
+        const previousIndex = (currentImageIndex - 1 + numberOfImages) % numberOfImages;
+        const nextIndex = (currentImageIndex + 1) % numberOfImages;
+      
+        document.getElementById('previous').children[0].src = images[previousIndex];
+        document.getElementById('current').children[0].src = images[currentImageIndex];
+        document.getElementById('next').children[0].src = images[nextIndex];
+      }
+      
+      setInterval(() => {
+        currentImageIndex = (currentImageIndex + 1) % numberOfImages;
+        updateCarousel();
+      }, 4000); 
+      
+      updateCarousel(); </script>
+
+</body>
+</html>
